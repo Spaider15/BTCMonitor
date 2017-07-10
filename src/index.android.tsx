@@ -11,6 +11,7 @@ import {
   Text,
   View
 } from 'react-native';
+import codePush from "react-native-code-push";
 
 export default class BTCMonitor extends React.Component<object, object> {
   render() {
@@ -50,4 +51,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('BTCMonitor', () => BTCMonitor);
+AppRegistry.registerComponent('BTCMonitor', () => (codePush as any)(BTCMonitor));
